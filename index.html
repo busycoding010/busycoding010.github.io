@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ComSci (A better school project)</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="icon" href="images/logos/Comsci - background.jpeg " />
+  </head>
+  <body>
+    <!-- <a href="#">
+        <img
+          class="logo"
+          src="images/logos/Comsci - transparent.png"
+          alt="ComSci logo"
+        />
+      </a>  -->
+
+    <div class="website-content">
+      <nav class="nav">
+        <ul class="nav-list">
+          <li><a href="#Home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#courses">Courses</a></li>
+          <li><a href="#apprenticeships">Apprenticeships</a></li>
+          <li><a href="#Contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <main>
+        <section class="section-hero">
+          <div class="hero-title">
+            <h1>Learning Computer Science. Together.</h1>
+          </div>
+          <div class="hero-description">
+            <p>
+              Studying Computer Science unlocks your potential and shapes your
+              future by solving real-world problems.
+            </p>
+          </div>
+          <div class="hero-buttons">
+            <a href="#get-started" class="btn-get">Get Started</a>
+            <a href="#contact" class="btn-contact">Contact</a>
+          </div>
+
+          <div class="students">
+            <div class="student-img">
+              <img
+                src="images/student-1.jpg"
+                alt="student photo"
+                width="100"
+                height="auto"
+              />
+              <img
+                src="images/student-2.jpg"
+                alt="student photo"
+                width="100"
+                height="auto"
+              />
+              <img
+                src="images/student-3.jpg"
+                alt="student photo"
+                width="100"
+                height="auto"
+              />
+              <img
+                src="images/student-4.jpg"
+                alt="student photo"
+                width="100"
+                height="auto"
+              />
+              <img
+                src="images/student-5.jpg"
+                alt="student photo"
+                width="100"
+                height="auto"
+              />
+              <img
+                src="images/student-6.jpg"
+                alt="student photo"
+                width="100"
+                height="auto"
+              />
+            </div>
+            <p class="students-text">
+              <strong>215,000+</strong> students enrolled
+            </p>
+          </div>
+        </section>
+
+        <section class="options">
+          <h1>What do you want to learn about?</h1>
+          <div class="form-buttons">
+            <div class="button-grid">
+              <button
+                type="button"
+                class="select-btn"
+                onclick="selectButton(this)"
+              >
+                Web Development
+              </button>
+              <button
+                type="button"
+                class="select-btn"
+                onclick="selectButton(this)"
+              >
+                Data Science
+              </button>
+              <button
+                type="button"
+                class="select-btn"
+                onclick="selectButton(this)"
+              >
+                Computer Science
+              </button>
+              <button
+                type="button"
+                class="select-btn"
+                onclick="selectButton(this)"
+              >
+                Web Design
+              </button>
+              <button
+                type="button"
+                class="select-btn"
+                onclick="selectButton(this)"
+              >
+                Artificial Intelligence
+              </button>
+              <button
+                type="button"
+                class="select-btn"
+                onclick="selectButton(this)"
+              >
+                Game Development
+              </button>
+              <button
+                type="button"
+                class="select-btn"
+                onclick="selectButton(this)"
+              >
+                Mobile Development
+              </button>
+              <button
+                type="button"
+                class="select-btn"
+                onclick="selectButton(this)"
+              >
+                Data Visualisation
+              </button>
+              <button
+                type="button"
+                class="select-btn"
+                onclick="selectButton(this)"
+              >
+                Machine Learning
+              </button>
+              <button
+                type="button"
+                class="select-btn"
+                onclick="selectButton(this)"
+              >
+                Not sure yet
+              </button>
+            </div>
+          </div>
+
+          <div class="form-container">
+            <form action="https://formspree.io/f/xrbzdkpb" method="POST">
+              <div class="form-input">
+                <label for="name">Name:</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Bob Smith"
+                  required
+                />
+
+                <label for="email">Email:</label>
+                <input
+                  type="text"
+                  id="email"
+                  name="email"
+                  placeholder="someone@example.com"
+                  required
+                />
+
+                <label for="country">Country:</label>
+                <select id="country" name="country" required>
+                  <option value="">Please select your country</option>
+                  <option value="Argentina">Argentina</option>
+                  <option value="Australia">Australia</option>
+                  <option value="Brazil">Brazil</option>
+                  <option value="Canada">Canada</option>
+                  <option value="China">China</option>
+                  <option value="France">France</option>
+                  <option value="Germany">Germany</option>
+                  <option value="India">India</option>
+                  <option value="Italy">Italy</option>
+                  <option value="Japan">Japan</option>
+                  <option value="Mexico">Mexico</option>
+                  <option value="Nigeria">Nigeria</option>
+                  <option value="Russia">Russia</option>
+                  <option value="Saudi Arabia">Saudi Arabia</option>
+                  <option value="South Africa">South Africa</option>
+                  <option value="South Korea">South Korea</option>
+                  <option value="Spain">Spain</option>
+                  <option value="United Kingdom">United Kingdom</option>
+                  <option value="United States">United States</option>
+                </select>
+
+                <input type="submit" value="Submit" />
+              </div>
+            </form>
+          </div>
+        </section>
+
+        <section class="courses">
+          <div class="container">
+            <div class="card">
+              <h3>Intro to Generative AI</h3>
+              <p>
+                Dive into the many forms of generative AI and learn how we can
+                best use these new technologies!
+              </p>
+              <div class="details">Beginner Friendly<br />&lt; 1 hour</div>
+              <a class="sign-up-btn" href="#Sign-Up">Sign Up</a>
+            </div>
+
+            <div class="card">
+              <div class="tag">Free course</div>
+              <h3>Learn How to Use ChatGPT</h3>
+              <p>
+                Ready to dive into the world of Generative AI? Learn how ChatGPT
+                works, how to use ChatGPT in your everyday life, and how to...
+              </p>
+              <div class="details">Beginner Friendly<br />1 hour</div>
+              <a class="sign-up-btn" href="#Sign-Up">Sign Up</a>
+            </div>
+
+            <div class="card">
+              <div class="tag">Free course</div>
+              <h3>Learn How to Use AI for Coding</h3>
+              <p>
+                Ready to learn how to use AI for coding? Learn how to use
+                generative AI tools like ChatGPT to generate code and
+                expedite...
+              </p>
+              <div class="details">Beginner Friendly<br />1 hour</div>
+              <a class="sign-up-btn" href="#Sign-Up">Sign Up</a>
+            </div>
+
+            <div class="card highlight">
+              <h3>Machine Learning/AI Engineer</h3>
+              <p>
+                Machine Learning/AI Engineers build end-to-end ML applications
+                and power many of the apps we use every day. They work...
+              </p>
+              <div class="details">
+                Includes 7 Courses<br />With Certificate<br />Intermediate<br />50
+                hours
+              </div>
+              <a class="sign-up-btn" href="#Sign-Up">Sign Up</a>
+            </div>
+          </div>
+
+          <a href="#" class="btn">Explore Full Catalog &rarr;</a>
+        </section>
+      </main>
+
+      <footer>
+        <div class="footer-container">
+          <div class="footer-section links">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Courses</a></li>
+              <li><a href="#">Apprenticeships</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3>Contact Us</h3>
+            <h4>Address</h4>
+            <p>123 Sky Road, London, AB12 3DE</p>
+            <h4>Phone:</h4>
+            <p>0121 123 456 789</p>
+            <h4>Email:</h4>
+            <p>info@comsci.com</p>
+          </div>
+          <div class="footer-section social-media">
+            <h3>Follow Us</h3>
+            <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2024 ComSci | All Rights Reserved</p>
+        </div>
+      </footer>
+
+      <!-- Icons -->
+      <script
+        type="module"
+        src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+      ></script>
+      <script
+        nomodule
+        src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+      ></script>
+      <script>
+        function selectButton(button) {
+          // Remove 'selected' class from all buttons
+          const buttons = document.querySelectorAll(".select-btn");
+          buttons.forEach((btn) => btn.classList.remove("selected"));
+
+          // Add 'selected' class to the clicked button
+          button.classList.add("selected");
+
+          // Set the value of the hidden input to the text of the selected button
+          const selectedOption = document.getElementById("selected-option");
+          selectedOption.value = button.textContent.trim();
+        }
+
+        const yearEl = document.querySelector(".year");
+        const currentYear = new Date().getFullYear();
+        yearEl.textContent = currentYear;
+
+        function checkFlexGap() {
+          var flex = document.createElement("div");
+          flex.style.display = "flex";
+          flex.style.flexDirection = "column";
+          flex.style.rowGap = "1px";
+
+          flex.appendChild(document.createElement("div"));
+          flex.appendChild(document.createElement("div"));
+
+          document.body.appendChild(flex);
+          var isSupported = flex.scrollHeight === 1;
+          flex.parentNode.removeChild(flex);
+          console.log(isSupported);
+
+          if (!isSupported) document.body.classList.add("no-flexbox-gap");
+        }
+        checkFlexGap();
+      </script>
+    </div>
+  </body>
+</html>
